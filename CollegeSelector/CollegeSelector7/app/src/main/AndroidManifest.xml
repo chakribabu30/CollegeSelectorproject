@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.collegeselector">
+
+    <!-- Required Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="College Selector"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollegeSelector">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE" />
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Signup & Login -->
+        <activity android:name=".SignupActivity" android:exported="true" />
+        <activity android:name=".LoginActivity" android:exported="true" />
+
+        <!-- Dashboard -->
+        <activity android:name=".DashboardActivity" android:exported="true" />
+
+        <!-- Program Selection -->
+        <activity android:name=".ProgramSelectionActivity" android:exported="true" />
+
+        <!-- Score or Rank Entry -->
+        <activity android:name=".RankEntryActivity" android:exported="true" />
+
+        <!-- Eligible Colleges -->
+        <activity android:name=".EligibleCollegesActivity" android:exported="true" />
+
+        <!-- Maps Activity -->
+        <activity android:name=".MapsActivity" android:exported="true" />
+
+    </application>
+
+</manifest>

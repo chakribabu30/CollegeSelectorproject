@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CollegeSelector</string>
+    <string-array name="programs_array">
+        <item>B.Tech</item>
+        <item>Medical</item>
+        <item>Law</item>
+    </string-array>
+</resources>

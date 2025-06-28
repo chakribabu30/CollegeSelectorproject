@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Rank"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etRank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Rank"
+        android:inputType="number"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnShowColleges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Eligible Colleges" />
+</LinearLayout>
+
